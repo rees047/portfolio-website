@@ -1,0 +1,457 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+teal: #10a19b
+pink: #fc5da7
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+	color: #10a19b;
+}
+
+a{
+	color: #10a19b;
+}
+
+h1{
+	color: #fc5da7;
+}
+
+h2{
+	color: #fc5da7;
+}
+
+h3{
+	color: #fc5da7;
+}
+
+h4{
+	color: #fc5da7;
+}
+
+h5{
+	color: #fc5da7;
+}
+
+h6{
+	color: #fc5da7;
+}
+
+body{
+	font-family: 'Raleway', serif;
+	line-height: 1.5em;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:visited{
+	font-style: italic;
+}
+
+a:hover{
+	color: #fc5da7;
+}
+
+a:focus{
+	color: #fc5da7;
+}
+
+a:active{
+	font-weight: normal;
+}
+
+
+/* --------------- GLOBAL CLASSES ---------------*/
+
+.clear-both-float{
+	clear: both;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.page-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	padding: 20px;
+}
+
+.page-header__item {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 12%;
+	        flex: 0 1 12%;
+}
+
+.page-header__item:last-child {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	text-align: right;
+}
+
+.page-footer{
+	clear: both;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+}
+
+.logo{
+	width: 10%;
+}
+
+.navigation-list {
+	list-style-type: none;
+	line-height: 6em;
+}
+
+.navigation-list li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+/* --------------- INDEX PAGE ---------------*/
+.profile{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.profile_portrait{
+	float: left;
+	width: 250px;
+	margin-right: 40px;
+	border-radius: 50%;
+}
+
+
+/* --------------- CONTACT PAGE ---------------*/
+.contact__submitbtn--submit{
+	padding: 0.5em;
+	border-radius: 1em;
+}
+
+.contact__submitbtn--submit{
+	background-color: #90d4d0;
+	padding: 0.5em;
+	border-radius: 1em;
+	border-color: #90d4d0;
+	font-weight: bold;	
+}
+
+.contact__submitbtn--submit:hover{
+	background-color: #fc5da7;
+	cursor: pointer;
+}
+
+.contact__submitbtn--submi:focus{
+	background-color: #fc5da7;
+	cursor: pointer;
+}
+
+.contact__submitbtn--submit:active{
+	background-color: #fc5da7;
+	cursor: pointer;
+}
+
+.contact__submitbtn--submit, .contact__submitbtn--submit:hover,
+.contact__submitbtn--submi:focus, .contact__submitbtn--submit:active{
+	outline: none;
+}
+
+/* --------------- WORK PAGE ---------------*/
+
+/* start grid fallback */
+.table-grid__item {
+	display: inline-block;
+	width: 50%;
+}
+/* end grid fallback */
+
+@supports (display: grid) {
+	
+	.table-grid {
+		display: -ms-grid;
+		display: grid;
+		/* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+		-ms-grid-columns: 1fr 8% 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 8%;
+		margin: 0 0 5% 0;
+	}
+	
+	.table-grid__item {
+		background-color: #e4e5eb;
+		width: auto;
+		min-height: auto;
+		margin: 0;
+	}
+	
+}
+
+/* --------------- ABOUT ME ---------------*/
+.button-link{
+	display: inline-block;
+	padding: 5px;
+	border: 4px solid #ffffff;
+	border-radius: 25px;
+	-webkit-transition-property: border, background-color;
+	-o-transition-property: border, background-color;
+	transition-property: border, background-color;
+	-webkit-transition-duration: .5s;
+	     -o-transition-duration: .5s;
+	        transition-duration: .5s
+}
+.button-link:visited{
+	display: inline-block;
+	padding: 5px;
+	border: 4px solid #ffffff;
+	border-radius: 25px;
+	-webkit-transition-property: border, background-color;
+	-o-transition-property: border, background-color;
+	transition-property: border, background-color;
+	-webkit-transition-duration: .5s;
+	     -o-transition-duration: .5s;
+	        transition-duration: .5s
+}
+.button-link:active{
+	display: inline-block;
+	padding: 5px;
+	border: 4px solid #ffffff;
+	border-radius: 25px;
+	-webkit-transition-property: border, background-color;
+	-o-transition-property: border, background-color;
+	transition-property: border, background-color;
+	-webkit-transition-duration: .5s;
+	     -o-transition-duration: .5s;
+	        transition-duration: .5s
+}
+
+.button-link:hover{
+	display: inline-block;
+	border: 4px ridge #fc5da7;
+    border-radius: 25px;
+	background-color: #ffd8e9;
+}
+
+.button-link:focus{
+	display: inline-block;
+	border: 4px ridge #fc5da7;
+    border-radius: 25px;
+	background-color: #ffd8e9;
+}
+
+.name-rotate{
+	display: inline-block;
+	-webkit-transition: font-size 2s, color 2s, -webkit-transform 2s;
+	transition: font-size 2s, color 2s, -webkit-transform 2s;
+	-o-transition: font-size 2s, color 2s, transform 2s;
+	transition: font-size 2s, color 2s, transform 2s;
+	transition: font-size 2s, color 2s, transform 2s, -webkit-transform 2s;
+	cursor: pointer;
+}
+
+.name-rotate:hover{
+	font-size: 2em;
+	color: #10a19b;
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+
+@-webkit-keyframes move-big-cloud{
+	
+	from {
+		-webkit-transform: translate(0, 0px);
+		        transform: translate(0, 0px);
+	}
+	
+	to {
+		-webkit-transform: translate(200px, 0px);
+		        transform: translate(200px, 0px);
+	}
+}
+
+@keyframes move-big-cloud{
+	
+	from {
+		-webkit-transform: translate(0, 0px);
+		        transform: translate(0, 0px);
+	}
+	
+	to {
+		-webkit-transform: translate(200px, 0px);
+		        transform: translate(200px, 0px);
+	}
+}
+
+#path110{ /* move-big-cloud */
+	/*animation-duration: 4s;
+	animation-name: color-change;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;*/
+	-webkit-animation: 8s move-big-cloud infinite alternate linear;
+	        animation: 8s move-big-cloud infinite alternate linear;
+}
+
+@-webkit-keyframes move-small-cloud-left{
+	
+	from {
+		-webkit-transform: translate(0, 0px);
+		        transform: translate(0, 0px);
+	}
+	
+	to {
+		-webkit-transform: translate(200px, 50px);
+		        transform: translate(200px, 50px);
+	}
+}
+
+@keyframes move-small-cloud-left{
+	
+	from {
+		-webkit-transform: translate(0, 0px);
+		        transform: translate(0, 0px);
+	}
+	
+	to {
+		-webkit-transform: translate(200px, 50px);
+		        transform: translate(200px, 50px);
+	}
+}
+
+#path114{ /* move-small-cloud-left*/
+	/*animation-duration: 4s;
+	animation-name: color-change;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;*/
+	-webkit-animation: 8s move-small-cloud-left infinite alternate linear;
+	        animation: 8s move-small-cloud-left infinite alternate linear;
+}
+
+
+@-webkit-keyframes move-small-cloud-right{
+	
+	from {
+		-webkit-transform: translate(0, 0px);
+		        transform: translate(0, 0px);
+	}
+	
+	to {
+		-webkit-transform: translate(-200px, 0px);
+		        transform: translate(-200px, 0px);
+	}
+}
+
+
+@keyframes move-small-cloud-right{
+	
+	from {
+		-webkit-transform: translate(0, 0px);
+		        transform: translate(0, 0px);
+	}
+	
+	to {
+		-webkit-transform: translate(-200px, 0px);
+		        transform: translate(-200px, 0px);
+	}
+}
+
+#path112{ /* move-small-cloud-right*/
+	/*animation-duration: 4s;
+	animation-name: color-change;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;*/
+	-webkit-animation: 8s move-small-cloud-right infinite alternate linear;
+	        animation: 8s move-small-cloud-right infinite alternate linear;
+}
+
+@-webkit-keyframes growTree {
+	from {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	
+	to {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes growTree {
+	from {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	
+	to {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+#path332, #path258, #path1654, #path1684 {
+  -webkit-animation: 4s growTree 1 alternate ease-out;
+          animation: 4s growTree 1 alternate ease-out; 
+  height: 50px;
+}
+
+
+
+/* --------------- MEDIA QUERIES ---------------*/
+
+@media all and (max-width: 750px) { /** used to be max-width: 500px; **/
+	
+	.table-grid {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+	
+}
+
+/*@media all and (min-width: 500px) and (max-width: 750px){
+	
+	.table-grid {
+		grid-template-columns: 1fr;
+	}
+}*/
+
+@media all and (max-width: 750px) {
+	
+	.table-grid {
+		grid-gap: 10px;
+	}
+	
+	.table-grid__item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	
+	h1 {
+		font-size: 22px;
+	}
+  
+}
