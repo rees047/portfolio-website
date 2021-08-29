@@ -1,0 +1,4 @@
+
+*.json
+.stylelintrc.json
+.vscode/settings.json
